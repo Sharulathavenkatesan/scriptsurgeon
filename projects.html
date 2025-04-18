@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    .projects-section {
+      padding: 4rem 10%;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      color: white;
+    }
+
+    .projects-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .project-card {
+      background: #111;
+      border-left: 6px solid #4acfee;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #4acfee88;
+      transition: 0.3s ease-in-out;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-info h2 {
+      color: #4acfee;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-info p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .back-vid {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+
+    nav h1 {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #4acfee;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay loop muted plays-inline class="back-vid">
+    <source src="galaxy.mp4" type="video/mp4" />
+  </video>
+
+  <section class="main-section">
+    <nav>
+      <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #4acfee;">Script</span>Surgeon</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#" class="active">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="projects-section">
+      <h1 data-aos="fade-down">My Projects</h1>
+      <div class="projects-container">
+
+        <!-- Library Management -->
+        <div class="project-card" data-aos="fade-up">
+          <div class="project-info">
+            <h2>Library Management (CRUD) Operation</h2>
+            <p>
+              Developed a library management system using Python and SQL for efficient record-keeping and data operations.
+              Implemented full CRUD (Create, Read, Update, Delete) functionalities to manage books, users, and transactions.
+              Led a team in designing a user-friendly console interface and ensuring robust backend logic for seamless performance.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stock Price Prediction -->
+        <div class="project-card" data-aos="fade-up">
+          <div class="project-info">
+            <h2>Stock Price Prediction Using Python</h2>
+            <p>
+              Implemented a stock price prediction model using machine learning techniques like Linear Regression.
+              Analyzed historical stock data and visualized trends using Python libraries such as Pandas, Matplotlib, and Scikit-learn.
+              Evaluated model accuracy and provided insights into potential investment decisions based on prediction outputs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bus Reservation System -->
+        <div class="project-card" data-aos="fade-up">
+          <div class="project-info">
+            <h2>Bus Reservation System</h2>
+            <p>
+              Developed a bus reservation system using Django for efficient ticket booking and management.
+              Implemented role-based access control and automated email confirmation.
+              Created a user-friendly interface for passengers to easily book and manage bus reservations.
+            </p>
+          </div>
+        </div>
+
+        <!-- MOZHI - The Deaf System -->
+        <div class="project-card" data-aos="fade-up">
+          <div class="project-info">
+            <h2>MOZHI – The Deaf System</h2>
+            <p>
+              An innovative AI-based system built using Flask, MySQL, HTML, CSS, and Bootstrap.
+              Designed to assist hearing-impaired individuals by converting speech into text.
+              Focused on accessibility and real-time communication using AI and web technologies.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

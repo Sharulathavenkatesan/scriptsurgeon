@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    .skills-section {
+      padding: 4rem 10%;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      border-radius: 20px;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .skill-card {
+      background: #111;
+      padding: 1.5rem;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px #4acfee88;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .skill-card i {
+      font-size: 2.5rem;
+      color: #4acfee;
+      margin-bottom: 1rem;
+    }
+
+    .skill-card h2 {
+      font-size: 1.3rem;
+      color: #4acfee;
+      margin-bottom: 0.5rem;
+    }
+
+    .back-vid {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+
+    nav h1 {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #4acfee;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay loop muted plays-inline class="back-vid">
+    <source src="galaxy.mp4" type="video/mp4">
+  </video>
+  
+  <section class="main-section">
+    <nav>
+      <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #4acfee;">Script</span>Surgeon</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#" class="active">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="skills-section">
+      <h1 data-aos="fade-down">My Skills</h1>
+      <div class="skills-container">
+
+        <div class="skill-card" data-aos="fade-up">
+          <i class='bx bxl-python'></i>
+          <h2>Python</h2>
+          <p>Advanced level – used in web development, ML models, automation, and console apps.</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up">
+          <i class='bx bxl-java'></i>
+          <h2>Java</h2>
+          <p>Intermediate level – applied with Spring Boot for backend services.</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up">
+          <i class='bx bxl-html5'></i>
+          <h2>HTML & CSS</h2>
+          <p>Proficient in building modern, responsive UI with clean code practices.</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up">
+          <i class='bx bxl-bootstrap'></i>
+          <h2>Bootstrap</h2>
+          <p>Used for responsive design and fast prototyping across multiple projects.</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up">
+          <i class='bx bxl-django'></i>
+          <h2>Django</h2>
+          <p>Built secure, scalable web apps with Django and integrated backend databases.</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up">
+          <i class='bx bx-cloud'></i>
+          <h2>Spring Boot & REST APIs</h2>
+          <p>Hands-on experience with RESTful backend services and microservices in Spring Boot.</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up">
+          <i class='bx bxl-git'></i>
+          <h2>Git & GitHub</h2>
+          <p>Version control and collaboration on projects with efficient Git workflows.</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up">
+          <i class='bx bxl-mongodb'></i>
+          <h2>MySQL & MongoDB</h2>
+          <p>Designed and managed relational and NoSQL databases for various apps.</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up">
+          <i class='bx bx-brain'></i>
+          <h2>AI & ML Tools</h2>
+          <p>Worked with TensorFlow, YOLO, OpenCV, Ollama, and Scikit-learn for model building and computer vision.</p>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up">
+          <i class='bx bx-code-alt'></i>
+          <h2>Core Competencies</h2>
+          <p>Expertise in Web Development, Machine Learning, and Computer Vision.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

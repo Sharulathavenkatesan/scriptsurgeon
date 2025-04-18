@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    .about-section {
+      padding: 4rem 10%;
+      color: white;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .about-text {
+      flex: 1;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .about-text b {
+      color: #4acfee;
+    }
+
+    .about-image img {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 0 15px #4acfee;
+    }
+
+    .info-sec {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 3rem;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .info-card {
+      background: #111;
+      padding: 1.5rem 2rem;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px #4acfee;
+      transition: 0.3s ease-in-out;
+    }
+
+    .info-card:hover {
+      transform: scale(1.05);
+    }
+
+    .info-card h1 {
+      color: #4acfee;
+      font-size: 2.5rem;
+    }
+
+    .info-card p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .back-vid {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+
+    nav h1 {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #4acfee;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay loop muted plays-inline class="back-vid">
+    <source src="galaxy.mp4" type="video/mp4">
+  </video>
+
+  <section class="main-section">
+    <nav>
+      <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #4acfee;">Script</span>Surgeon</h1>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="about-section">
+      <h1 data-aos="fade-down">About Me</h1>
+
+
+      <div class="about-content">
+        <div class="about-text" data-aos="fade-right">
+          <p>
+            Hello! I'm <b>Sharulatha Venkatesan</b>, a passionate and enthusiastic final-year Information Technology student from Sri Balaji Chockalingam Engineering College. I’m driven by curiosity, creativity, and a constant desire to learn and grow.
+          </p>
+          <p>
+            I believe in the power of teamwork and collaboration to bring ideas to life. I enjoy being part of environments where minds come together to build meaningful solutions. My strength lies in my <b>positive attitude</b>, <b>problem-solving mindset</b>, and willingness to take on challenges with confidence and dedication.
+          </p>
+          <p>
+            I actively participate in both technical and creative events and love contributing to projects that make a real-world impact. Whether it's brainstorming with a team, debugging code, or designing systems — I’m all in.
+          </p>
+        </div>
+
+        <div class="about-image" data-aos="fade-left">
+          <img src="profile.jpg" alt="Profile Image">
+        </div>
+      </div>
+
+    
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

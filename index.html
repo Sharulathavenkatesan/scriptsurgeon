@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <video autoplay loop muted plays-inline class="back-vid">
+    <source src="C:\Users\tamil\OneDrive\Desktop\dummy\galaxy.mp4" type="video/mp4">
+  </video>
+  
+  <section class="main-section">
+    <nav>
+      <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #4acfee;">Script</span>Surgeon</h1>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-info">
+        <h1 data-aos="fade-right">Hi, I'm </h1>
+        <h1 data-aos="fade-right"> Sharulatha Venkatesan</h1>
+        <h2 data-aos="fade-left">I'm a <span id="typing-text" style="color:#4acfee;"></span></h2>
+        <p data-aos="flip-down">
+          I specialize in creating innovative, scalable, and efficient digital solutions to help businesses thrive.
+        </p>
+        
+        <div class="Buttons">
+          <a href="C:\Users\tamil\OneDrive\Desktop\dummy\sharu_latha_resume.pdf" download>
+            <button class="btn" data-aos="zoom-in-left">Download CV</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-img" data-aos="zoom-in-left">
+        <img src="C:\Users\tamil\OneDrive\Desktop\dummy\2.jpg" alt="person-img">
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    AOS.init();
+
+    var typed = new Typed("#typing-text", {
+      strings: ["Developer", "Tester", "Debugger", "ChatGPT Enthusiast"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+</body>
+</html>
